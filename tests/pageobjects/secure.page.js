@@ -10,9 +10,6 @@ class SecurePage extends Page {
     return this.pageTitle.getText();
   }
 
-  async isProductPageLoaded() {
-    return (await this.inventoryItems.length) > 0;
-  }
 }
 
 export default new SecurePage();
